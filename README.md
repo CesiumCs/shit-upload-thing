@@ -1,6 +1,6 @@
 # thingy uploader
 
-probably not secure, who knows
+uploads files to a webserver and change its name to a md5 hash
 
 ## how to use
 
