@@ -2,6 +2,11 @@
 
 uploads files to a webserver and change its name to a md5 hash
 
+you probably just shouldnt use this; its very possible that the seventeen year
+who glued this shitshow together missed some important security things and 
+isn't responsible for you accidentally opening your server to arbitrary code
+execution from the whole world or some spooky shit like that
+
 ## how to use
 
 step one: dont
