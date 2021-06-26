@@ -1,0 +1,11 @@
+version: "2.2"
+services:
+  webserver:
+    restart: always
+    ports:
+      - 8080:80
+    build: .
+    volumes:
+      - ./files:/var/www/html
+    environment:
+      - URL=https://cesium.one/i/
