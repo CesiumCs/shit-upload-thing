@@ -1,7 +1,7 @@
 <?php
 
 # "config" variables
-$URL = "https://cesium.one/i/" # should have trailing slash
+$URL = "https://cesium.one/i/"; # should have trailing slash
 
     if(isset($_FILES['image'])){
         $errors= array();
