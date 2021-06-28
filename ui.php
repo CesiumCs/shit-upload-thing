@@ -5,6 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
             :root {
+		background-color: black;
+		color: white;
+		width: 69%;
+		margin: auto;
+		text-align: center;
                 font-size: 1.2em;
             }
             input[type="submit" i] {
@@ -26,12 +31,10 @@
             <input type = "file" name = "image" />
             <br/>
             <input type = "submit" value="SEND THAT BITCH"/>	
-            <ul>
-                <li>Sent file: <?php echo $_FILES['image']['name'];  ?>
-                <li>File size: <?php echo $_FILES['image']['size'];  ?>
-                <li>File type: <?php echo $_FILES['image']['type'] ?>
-                <li>Name on server: <a href="./<?php echo $new_name?>"><?php echo $new_name ?></a>
-            </ul>
+                <p>Sent file: <?php echo $_FILES['image']['name'];  ?>
+		<br>File size: <?php echo $_FILES['image']['size'];  ?>
+		<br>File type: <?php echo $_FILES['image']['type'] ?>
+		<br>Name on server: <a href="./<?php echo $new_name?>"><?php echo $new_name ?></a></p>
         </form>
     </body>
 </html>
