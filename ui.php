@@ -27,14 +27,14 @@
 		</style>
 	</head>
 	<body>  
-		<form action = "" method = "POST" enctype = "multipart/form-data">
-		<input type = "file" name = "image" />
+		<form action="" method="POST" enctype="multipart/form-data">
+		<input type="file" name="image" />
 		<br/>
-		<input type = "submit" value="SEND THAT BITCH"/>	
-		<p>Sent file: <?php echo $_FILES['image']['name'];  ?>
-		<br>File size: <?php echo $_FILES['image']['size'];  ?>
-		<br>File type: <?php echo $_FILES['image']['type'] ?>
-		<br>Name on server: <a href="./<?php echo $new_name?>"><?php echo $new_name ?></a></p>
+		<input type="submit" value="SEND THAT BITCH"/>	
+		<p>Sent file: <?php echo $_FILES['image']['name'];?>
+		<br>File size: <?php echo $_FILES['image']['size'];?>
+		<br>File type: <?php echo $_FILES['image']['type'];?>
+		<br>Name on server: <a href="./<?php echo $new_name?>"><?php echo $new_name;?></a></p>
 		</form>
 	</body>
 </html>
