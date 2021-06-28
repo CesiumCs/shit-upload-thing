@@ -24,6 +24,11 @@
 			display: inline-block;
 			font-size: 16px;
 		}
+		input[type="submit" i]:hover {
+			background-color: #002255; /* slightly lighter dark blue */
+		}
+		input[type="submit" i]:active {
+			background-color: #000033; /* slightly darker dark blue */
 		</style>
 	</head>
 	<body>  
