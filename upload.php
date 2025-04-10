@@ -2,7 +2,7 @@
 
 # "config" variables
 $URL = "https://cesium.one/i/"; # should have trailing slash
-$LENGTH = 8 # how long you want the url to be
+$LENGTH = 8; # how long you want the url to be
 
 if ((isset($_FILES['image'])) && ($_FILES['image']['size'] > 0))  {
 	$errors= array();
