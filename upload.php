@@ -2,6 +2,7 @@
 
 # "config" variables
 $URL = "https://cesium.one/i/"; # should have trailing slash
+$LENGTH = 8 # how long you want the url to be
 
 if ((isset($_FILES['image'])) && ($_FILES['image']['size'] > 0))  {
 	$errors= array();
@@ -12,9 +13,9 @@ if ((isset($_FILES['image'])) && ($_FILES['image']['size'] > 0))  {
 	$file_ext = strtolower(end(explode('.',$_FILES['image']['name'])));
 
 	if(empty($errors)==true) {
-		$new_name = substr(md5_file($file_tmp), 0, 8).".".$file_ext;
+		$new_name = substr(md5_file($file_tmp), 0, $LENGTH).".".$file_ext;
 		if($file_ext==$file_name) {
-			$new_name = substr(md5_file($file_tmp), 0, 8);
+			$new_name = substr(md5_file($file_tmp), 0, $LENGTH);
 		}
 		move_uploaded_file($file_tmp,"./".$new_name);
 	} else {
