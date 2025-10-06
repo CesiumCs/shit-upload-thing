@@ -3,9 +3,11 @@ services:
   webserver:
     restart: always
     ports:
-      - 8090:80
+      - 8095:80
     build: .
     volumes:
       - ./files:/var/www/html
     environment:
       - URL=https://cesium.one/i/
+      - PHP_MEMORY_LIMIT=4096M
+      - PHP_UPLOAD_LIMIT=4096M
