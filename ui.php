@@ -11,6 +11,7 @@
 			margin: auto;
 			text-align: center;
 			font-size: 1.2em;
+			font-family: sans-serif;
 		}
 		input[type="submit" i] {
 			background-color: #001144; /* dark blue */
@@ -29,6 +30,7 @@
 		}
 		input[type="submit" i]:active {
 			background-color: #000033; /* slightly darker dark blue */
+		}
 		</style>
 	</head>
 	<body>  
