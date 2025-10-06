@@ -35,6 +35,7 @@
 		<form action="" method="POST" enctype="multipart/form-data">
 		<input type="file" name="image" />
 		<br/>
+		<p><input type="checkbox" name="keepname"/>Keep Original Name</p>
 		<input type="submit" value="SEND THAT BITCH"/>	
 		<p>Sent file: <?php echo $_FILES['image']['name'];?>
 		<br>File size: <?php echo $_FILES['image']['size'];?>

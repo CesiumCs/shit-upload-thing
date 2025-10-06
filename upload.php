@@ -13,9 +13,13 @@ if ((isset($_FILES['image'])) && ($_FILES['image']['size'] > 0))  {
 	$file_ext = strtolower(end(explode('.',$_FILES['image']['name'])));
 
 	if(empty($errors)==true) {
-		$new_name = substr(md5_file($file_tmp), 0, $LENGTH).".".$file_ext;
-		if($file_ext==$file_name) {
-			$new_name = substr(md5_file($file_tmp), 0, $LENGTH);
+		if(!isset($_POST['keepname'])) {
+			$new_name = substr(md5_file($file_tmp), 0, $LENGTH).".".$file_ext;
+			if($file_ext==$file_name) {
+				$new_name = substr(md5_file($file_tmp), 0, $LENGTH);
+			}
+		} else {
+			$new_name = $file_name;
 		}
 		move_uploaded_file($file_tmp,"./".$new_name);
 	} else {
